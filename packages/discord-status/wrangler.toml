@@ -1,6 +1,5 @@
 name = "discord-status"
 workers_dev = false
-account_id = "3ed51f2c99510cd7fe8fcd8ed0621a37"
 compatibility_date = "2022-10-06"
 main = "src/index.ts"
 
