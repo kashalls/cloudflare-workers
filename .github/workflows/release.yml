@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: ⬢ Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: yarn
+
+      - name: 📦 Install Packages
+        run: yarn install --frozen-lockfile
+
+      - name: ⚙️ Build Packages
+        run: yarn build
+
+      - name: 👤 Setup Identity
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+      - name: 🎓 Graduation
+        continue-on-error: true
+        id: graduation
+        run: yarn release --create-release github --conventional-graduate
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🚀 Release
+        if: ${{ steps.graduation.outcome == 'failure'  }}
+        run: yarn release --create-release github
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -8,8 +8,8 @@
     "lerna": "^6.4.1"
   },
   "scripts": {
-    "build": "npx lerna run build",
+    "build": "lerna run build --stream --parallel",
     "test": "npx lerna run test",
-    "publish": "npx lerna run publish"
+    "release": "lerna publish -y"
   }
 }
