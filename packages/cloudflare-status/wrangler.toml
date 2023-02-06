@@ -1,0 +1,12 @@
+name = "cloudflare-status"
+workers_dev = false
+account_id = "3ed51f2c99510cd7fe8fcd8ed0621a37"
+compatibility_date = "2022-10-06"
+main = "src/index.ts"
+
+kv_namespaces = [
+  { binding = "KV", id = "dd0e4b731e5640c5bbb50fd4fc1436e7" }
+]
+
+[triggers]
+crons = ["* * * * *"]
