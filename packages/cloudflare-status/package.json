@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-status",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Easily follow status pages and send updates to your Discord server!",
   "main": "src/index.ts",
   "scripts": {

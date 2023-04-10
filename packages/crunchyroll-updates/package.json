@@ -9,7 +9,7 @@
   },
   "name": "crunchyroll-rss-worker",
   "description": "Cloudflare worker that posts discord webhook",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "src/index.js",
   "scripts": {
     "dev": "wrangler dev src/index.js",
