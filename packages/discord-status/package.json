@@ -1,6 +1,6 @@
 {
   "name": "status-worker",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Easily follow status pages and send updates to your Discord server!",
   "main": "src/index.ts",
   "scripts": {
