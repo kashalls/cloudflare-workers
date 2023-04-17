@@ -5082,9 +5082,9 @@ wordwrap@^1.0.0:
   integrity sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==
 
 wrangler@^2.6.2:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/wrangler/-/wrangler-2.14.0.tgz#3a40604d5537b6236670d84bdb9df10806b47b71"
-  integrity sha512-LTmSQ0jyd8c6bRhOAZZOh21Tr/HKkx7eWebCV2QmOHyacEeWLgc3Nu6KrOVBpqFVKCPCXHvcgqiN97I/nJHvFA==
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/wrangler/-/wrangler-2.15.1.tgz#7b8b1357e2d28885c3b67171214ee0e57d571eb1"
+  integrity sha512-nGcvyE6rStlPFiK8Uz2sB+Z6DyaVfThLYvKa6LfCsM5rN1C/3+flb3qp3DeEkFs09lLdSW0nAeaZavGkZSczvA==
   dependencies:
     "@cloudflare/kv-asset-handler" "^0.2.0"
     "@esbuild-plugins/node-globals-polyfill" "^0.1.1"
