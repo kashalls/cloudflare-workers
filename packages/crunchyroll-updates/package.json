@@ -5,7 +5,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "htmlparser2": "^9.0.0"
+    "htmlparser2": "^10.0.0"
   },
   "name": "crunchyroll-rss-worker",
   "description": "Cloudflare worker that posts discord webhook",
